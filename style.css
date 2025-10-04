@@ -1,0 +1,18 @@
+.calc {
+    border: 2px solid green;
+    width: 70%;
+}
+
+.display {
+    height: 30px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* grid-template-columns: 60px 30px 30px 30px; */
+}
+
+.digit {
+    
+}
