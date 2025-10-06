@@ -1,15 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .calc {
     border: 2px solid green;
-    width: 70%;
+    width: 30vw;
+    height: 50vh;
+    overflow:hidden;
+    
 }
 
 .display {
-    height: 30px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.849);
+    color: white;
+    font-size: 40px;
 }
 
 .buttons {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    height: 43vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 2px;
     /* grid-template-columns: 60px 30px 30px 30px; */
 }
 
