@@ -15,41 +15,14 @@ buttons.forEach((button) => {
     })
 })
 
-addition.addEventListener('click', () => {
-    operation()
-    operationTracker = '+'
-    display.innerText = '';
-})
-
-subtraction.addEventListener('click', () => {
-    operation()
-    operationTracker = '-'
-    display.innerText = '';
-})
-
-multiplication.addEventListener('click', () => {
-    operation()
-    operationTracker = '*'
-    display.innerText = '';
-})
-
-division.addEventListener('click', () => {
-    operation()
-    operationTracker = '/'
-    display.innerText = '';
-})
-
 equals.addEventListener('click', () => {
-    operation();
-    display.innerText = temp;
+    const result = eval(display.innerText)
+    display.innerText = result
 })
 
 clear.addEventListener('click', () => {
-    display.innerText = '';
-    temp = 0;
-    operation = undefined;
+    display.innerText = "";
 })
-
 
 
 
