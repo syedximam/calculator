@@ -11,10 +11,17 @@ buttons.forEach((button) => {
     })
 })
 
+
 equals.addEventListener('click', () => {
-    const result = eval(display.innerText)
+    try {
+        const result = eval(display.innerText)
     display.innerText = result
+    } catch (error) {
+        display.innerText = "Error"
+    }
+    
 })
+
 
 clear.addEventListener('click', () => {
     display.innerText = "";
